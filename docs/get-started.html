@@ -1,0 +1,66 @@
+---
+layout: base
+title: lyicon开始入门
+navbar_active: get-started
+view_class: v-get-started
+relative_path: ../
+---
+{% capture jumbotron_h1 %}<i class="fa fa-cogs" aria-hidden="true"></i>&nbsp; 开始入门{% endcapture %}
+简单几步轻松搞定lyicon
+
+{% include jumbotron.html %}
+
+<div class="content-underlay"></div>
+
+<div class="container">
+
+  <div class="hr margin-top-xl">
+    <span class="hr-text text-xl text-muted">or</span>
+  </div>
+
+  <section class="get-started-download" id="get-started-download">
+    <h2 class="page-header clearfix">
+      下载
+      <span class="label label-default text-base pull-right">Easy</span>
+    </h2>
+
+
+    <div class="download-css margin-bottom-xl" id="download-css">
+      <h3>Using CSS</h3>
+
+      <ol>
+        <li>Copy the entire <code>font-awesome</code> directory into your project.</li>
+        <li>
+          In the <code>&lt;head&gt;</code> of your html, reference the location to your font-awesome.min.css.
+{% highlight html %}
+<link rel="stylesheet" href="path/to/lyicon/css/lyicon.css">
+{% endhighlight %}
+        </li>
+        <li>Check out the <a href="{{ page.relative_path }}examples/">examples</a> to start using Font Awesome!</li>
+      </ol>
+    </div>
+
+  <section class="get-started-more margin-top-lg" id="get-started-more">
+    <h2 class="page-header">额外信息</h2>
+  </section>
+
+  <div class="row">
+    <div class="col-md-6" id="need-ie7">
+      <h4>Need IE7 Support?</h4>
+      <p>
+        If you need IE7 support, you have my condolences. Really. lyicon {{ site.fontawesome.version }}
+        doesn't support IE7, but an older version does. You'll need to check out the
+        <a href="{{ page.relative_path }}3.2.1/get-started/#need-ie7">3.2.1 instructions for using IE7</a>. Then go complain to
+        whomever decided your project needs IE7 support.
+      </p>
+    </div>
+
+    <div class="col-md-6" id="troubleshooting">
+      <h4>Troubleshooting</h4>
+      <p>If you're having trouble with Font Awesome, make sure to check out the
+        <a href="{{ site.fontawesome.github.url }}/wiki/Troubleshooting">troubleshooting wiki page</a>.
+        Generously maintained by <a href="https://twitter.com/gtagliala">@gtagliala</a>.</p>
+    </div>
+  </div>
+
+{% include modals/download.html %}

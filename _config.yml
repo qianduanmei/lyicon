@@ -1,0 +1,63 @@
+safe:             false
+source:           docs
+destination:      _gh_pages
+host:             0.0.0.0
+port:             80
+plugins_dir:      docs/_plugins
+encoding:         UTF-8
+url:              http://lyicon.lyunweb.com
+
+highlighter:      true
+permalink:        pretty
+
+# ensures SCSS files are compiled
+include:          [_*.scss]
+
+# used in building icon pages
+icon_meta:        docs/icons.yml
+icon_layout:      icon.html    # Relative to _layouts directory
+icon_destination: icon         # Relative to destination
+
+lyicon:
+  version:        0.0.1
+  url:            http://lyicon.lyunweb.com
+
+fontawesome:
+  version:        4.6.3
+  minor_version:  4.6
+  major_version:  4
+  doc_blob:       v4.6.3
+  url:            http://lyicon.lyunweb.com
+  legacy_url:     http://github.com/ijry/lyicon
+  twitter:        lyicon
+  tagline:        移动互联网时代专用图标库
+  css_prefix:     fa
+  author:
+    name:         jry
+    email:        598821125@qq.com
+    twitter:      lyicon
+    github:       lyicon
+  github:
+    url:          https://github.com/ijry/lyicon
+    project:      lyicn
+    org:          lingyun
+  license:
+    font:
+      version:      SIL OFL 1.1
+      url:          http://scripts.sil.org/OFL
+    code:
+      version:      Apache2 License
+      url:          http://www.apache.org/licenses/LICENSE-2.0
+    documentation:
+      version:      CC BY 3.0
+      url:          http://creativecommons.org/licenses/by/3.0/
+
+bootstrap:
+  version:        3.3.5
+  url:            http://getbootstrap.com
+
+jquery:
+  version:        1.11.3
+
+jquery_validate:
+  version:        1.13.1
